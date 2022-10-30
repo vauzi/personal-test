@@ -5,7 +5,7 @@ export const getUser = async (req, res) => {
     const response = await user.findAll();
     res.status(200).json(response);
   } catch (error) {
-    console.log(error.message);
+    res.status(500).json(error.message);
   }
 };
 
@@ -16,9 +16,10 @@ export const showUser = async (req, res) => {
         id: req.params.id,
       },
     });
+
     res.status(200).json(response);
   } catch (error) {
-    console.log(error.message);
+    res.status(500).json(error.message);
   }
 };
 
@@ -27,7 +28,7 @@ export const userStore = async (req, res) => {
     await user.create(req.body);
     res.status(201).json({ message: 'User Created!' });
   } catch (error) {
-    console.log(error.message);
+    res.status(500).json(error.message);
   }
 };
 
@@ -40,7 +41,7 @@ export const userUpdate = async (req, res) => {
     });
     res.status(200).json({ message: 'User Updeted!' });
   } catch (error) {
-    console.log(error.message);
+    res.status(500).json(error.message);
   }
 };
 
@@ -53,6 +54,6 @@ export const userDelete = async (req, res) => {
     });
     res.status(200).json({ message: 'User Deleted!' });
   } catch (error) {
-    console.log(error.message);
+    res.status(500).json(error.message);
   }
 };
