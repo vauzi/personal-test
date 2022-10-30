@@ -1,7 +1,7 @@
 1. BACKEND(Express js)
-    menjalankan server : npm run dev
-    database : MySQL
-    file koneksi database berada di config/database.js (jika ingin mengubah koneksi database)
+    -menjalankan server : npm run dev
+    -database : MySQL
+    -file koneksi database berada di config/database.js (jika ingin mengubah koneksi database)
 
     instal library
     -mysql2     
