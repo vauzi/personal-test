@@ -1,3 +1,5 @@
+git clone : https://github.com/vauzi/personal-test.git
+
 1. BACKEND(Express js)
     -menjalankan server : npm run dev
     -database : MySQL
@@ -10,6 +12,7 @@
     -nodemon    
 
 2.FRONTEND(VUE js)
+    -menjalankan server : npm run serve
     -vue router
     -Bootstrap 5
     -pinia
